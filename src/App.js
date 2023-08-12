@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import TopNav from './components/TopNav';
 import Sidebar from './components/Sidebar';
 import Content from './components/Content';
-import Specialties from './components/Specialties'; // Add this import line
+import Specialties from './components/Specialties';
 import './App.css';
 import projectImage from './project1.png';
 import projectImage2 from './portfolio.svg';

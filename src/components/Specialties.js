@@ -12,7 +12,7 @@ const Specialties = ({ skills }) => {
           </div>
         ))}
       </div>
-      <img src={words} alt="words Image" />
+      <img src={words} alt="words" />
     </div>
   );
 };
