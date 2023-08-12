@@ -16,8 +16,8 @@ const App = () => {
   const sidebarLinks = ['Project 1', 'Project 2', 'Project 3'];
 
   const images = [
-    projectImage,
     projectImage2,
+    projectImage,
     projectImage3,
   ];
 
