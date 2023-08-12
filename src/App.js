@@ -2,26 +2,34 @@ import React, { useState } from 'react';
 import TopNav from './components/TopNav';
 import Sidebar from './components/Sidebar';
 import Content from './components/Content';
+import Specialties from './components/Specialties'; // Add this import line
 import './App.css';
+import projectImage from './project1.png';
+import projectImage2 from './portfolio.svg';
+import projectImage3 from './project3.png';
 
 const App = () => {
   const [selectedLink, setSelectedLink] = useState(0);
 
-  const links = ['Project 1', 'Project 2', 'Project 3'];
+  const topNavLinks = ['Bio', 'Portfolio'];
+
+  const sidebarLinks = ['Project 1', 'Project 2', 'Project 3'];
 
   const images = [
-    '/path/to/project1-image.jpg',
-    '/path/to/project2-image.jpg',
-    '/path/to/project3-image.jpg',
+    projectImage,
+    projectImage2,
+    projectImage3,
   ];
 
+  const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js']; 
   return (
     <div className="app-container">
-      <TopNav />
+      <TopNav links={topNavLinks} setSelectedLink={setSelectedLink} />
       <div className="app-content">
-        <Sidebar links={links} setSelectedLink={setSelectedLink} />
+        <Sidebar links={sidebarLinks} setSelectedLink={setSelectedLink} />
         <Content selectedLink={selectedLink} images={images} />
       </div>
+      <Specialties skills={skills} /> 
     </div>
   );
 };
