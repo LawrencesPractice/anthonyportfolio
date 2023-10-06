@@ -12,7 +12,7 @@ const TopNav = ({ links, setSelectedLink }) => {
       </div>
       <div className="top-nav-middle">
         <div className="half-circle"></div> {/* Half circle element */}
-        <span className="brand">Lawrence Tsui Portfolio templete site</span>
+        <span className="brand">Lawrence Tsui Portfolio Templete Site</span>
       </div>
       <ul className="top-nav-links">
         {links.map((link, index) => (

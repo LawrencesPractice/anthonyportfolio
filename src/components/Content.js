@@ -9,10 +9,10 @@ const Content = ({ selectedLink, images }) => {
 
     return (
         <div className={`content ${isEnlarged ? 'enlarged' : ''}`} onClick={toggleEnlarged}>
-            <img src={images[selectedLink]} alt={`Project ${selectedLink+1}`} className={`img-fluid ${isEnlarged ? 'enlarged-img' : ''}`} />
+            <img src={images[selectedLink]} alt={`Project ${selectedLink + 1}`} className={`img-fluid ${isEnlarged ? 'enlarged-img' : ''}`} />
             <div className="content-overlay">
                 <div className="content-text">
-                    <h2 className="content-title">Project {selectedLink+1}</h2>
+                    <h2 className="content-title"> Click to open modal to view image for Project {selectedLink + 1}</h2>
                 </div>
             </div>
         </div>
